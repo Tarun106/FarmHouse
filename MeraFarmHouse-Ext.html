@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mera FarmHouse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <main class="pb-1">
+        <div class="container">
+            <div class="row col-sm-12">
+                <div class="logo col-2 col-sm-2">
+                    <img class="mt-4 logo w-100" src="logo.png" alt="logo">
+
+                </div>
+                <div class="search-bar  col-7 col-sm-4 px-0 mt-4">
+                    <nav class="navbar navbar-light">
+                        <div class="container-fluid p-0">
+                            <form class="d-flex input-group">
+                                <input class="form-control px-4 search border-end-0 border" type="search"
+                                    placeholder="Search your product here......" aria-label="Search">
+                                <span class="input-group-append">
+                                    <!-- <i class="fa fa-dash"></i> -->
+                                    <button class="btn btn-outline-secondary bg-white border ms-n5" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="icons col-3 col-sm-3 px-0">
+
+                    <div class="icons-above mt-2 mb-2 d-flex w-auto justify-content-end">
+                        <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                        </svg>
+                        <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart4" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg>
+                        <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-bell" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                        </svg>
+                    </div>
+                    <div
+                        class="icons-below d-flex mt-4 position-relative align-items-center flex-wrap justify-content-center">
+
+                        <svg class="" xmlns="http://www.w3.org/2000/svg" width="16" height="10" fill="currentColor"
+                            class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                        </svg>
+                        <span class="loc me-1">
+
+                            Location
+                        </span>
+                        <span class="bar">
+                            |
+                        </span>
+                        <svg class="" xmlns="http://www.w3.org/2000/svg" width="16" height="10" fill="currentColor"
+                            class="bi bi-translate" viewBox="0 0 16 16">
+                            <path
+                                d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z" />
+                            <path
+                                d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z" />
+                        </svg>
+                        <span class="lang">
+                            Language
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Header Section Ends here -->
+
+            <div class="row row-cols-5 row-cols-md-2 g-4 mt-3 text-center">
+                <div class="col">
+                    <div class="card border-0 mb-2 justify-content-center align-items-center">
+                        <img src="logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Machinery</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 mb-2 justify-content-center align-items-center">
+                        <img src="logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Seed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 mb-2 justify-content-center align-items-center">
+                        <img src="logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Farm Setup</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 mb-2 justify-content-center align-items-center">
+                        <img src="logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Tool and Equipments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 mb-2 justify-content-center align-items-center">
+                        <img src="logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Spare Part</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-cols-5 row-cols-md-2 g-4 text-center">
+                <div class="col">
+                    <div class="card border-0 mb-2 justify-content-center align-items-center">
+                        <img src="logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Pesticide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 mb-2 justify-content-center align-items-center">
+                        <img src="logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Fertiliser</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 mb-2 justify-content-center align-items-center">
+                        <img src="logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Crop Recommendation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 mb-2 justify-content-center align-items-center">
+                        <img src="logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Soil Report</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 mb-2 justify-content-center align-items-center">
+                        <img src="logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">FPO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Livestock -->
+
+            <hr>
+            <div class="row text-center justify-content-center">
+                <span class="btn-warning text-center hr-stock position-relative w-25">
+                    Livestock
+                </span>
+            </div>
+
+            <div class="row row-cols-6 row-cols-md-2 g-4 text-center">
+                <div class="col">
+                    <div class="card border-0 mb-2 justify-content-center align-items-center">
+                        <img src="logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Goat</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 mb-2 justify-content-center align-items-center">
+                        <img src="logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Poultry</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 mb-2 justify-content-center align-items-center">
+                        <img src="logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Fish</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 mb-2 justify-content-center align-items-center">
+                        <img src="logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Cow</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 mb-2 justify-content-center align-items-center">
+                        <img src="logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Bufflow</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 mb-2 justify-content-center align-items-center">
+                        <img src="logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Livestock Farmsetup</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Advertisement -->
+            
+            <hr>
+            <div class="row text-center justify-content-center">
+                <span class="btn-warning text-center hr-stock hr-stock-2 position-relative w-auto">
+                    Advertisement
+                </span>
+            </div>
+
+
+            <div class="row row-cols-3 row-cols-md-2 g-4 text-center">
+                <div class="col round-cols pt-2 px-1 ms-2">
+                    <div class="card border-0 mb-2 justify-content-center align-items-center round-cards">
+                        <img src="fields.jpg" class="card-img-top" alt="..." height="125">
+                    </div>
+                    <div class="card-body p-0">
+                        <p class="card-text">Advertisement</p>
+                    </div>
+                </div>
+                <div class="col round-cols pt-2 px-1 ms-3">
+                    <div class="card border-0 mb-2 justify-content-center align-items-center round-cards">
+                        <img src="fields.jpg" class="card-img-top" alt="..." height="125">
+                    </div>
+                    <div class="card-body p-0">
+                        <p class="card-text">Advertisement</p>
+                    </div>
+                </div>
+                <div class="col round-cols pt-2 px-1 ms-3">
+                    <div class="card border-0 mb-2 justify-content-center align-items-center round-cards">
+                        <img src="fields.jpg" class="card-img-top" alt="..." height="125">
+                    </div>
+                    <div class="card-body p-0">
+                        <p class="card-text">Advertisement</p>
+                    </div>
+                </div>
+
+<!-- Most Searched Products -->
+
+            </div>
+            <hr class="mt-5">
+            <div class="row text-center justify-content-center">
+                <span class="btn-warning text-center hr-stock hr-stock-2 position-relative w-auto">
+                    Most Searched Products
+                </span>
+            </div>
+
+            <div class="row row-cols-3 row-cols-md-2 g-4 text-center">
+                <div class="col px-1">
+                    <img src="fields.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="col px-1">
+                    <img src="fields.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="col px-1">
+                    <img src="fields.jpg" class="card-img-top" alt="...">
+                </div>
+
+                <div class="col px-1">
+                    <img src="fields.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="col px-1">
+                    <img src="fields.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="col px-1">
+                    <img src="fields.jpg" class="card-img-top" alt="...">
+                </div>
+
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4 text-center mt-3">
+                <div class="col px-1">
+                    <img src="field.jpg" class="card-img-top" alt="..." height="100">
+                    <div class="row text-center justify-content-center">
+                        <span class="bg-light text-center hr-stock hr-stock-3 position-relative w-auto">
+                            24/7 3D Farm View
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row row-cols-5 row-cols-md-2 g-4 text-center mt-3 bg-warning">
+            <div class="col ">
+                <div class="card border-0 mb-2 justify-content-center align-items-center bg-transparent">
+                    <img src="logo.png" class="card-img-top" alt="..." height="40" width="20">
+                </div>
+                <div class="card-body p-0">
+                    <p class="card-text">Expert Advise</p>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card border-0 mb-2 justify-content-center align-items-center bg-transparent">
+                    <img src="logo.png" class="card-img-top" alt="..." height="40" width="20">
+                </div>
+                <div class="card-body p-0">
+                    <p class="card-text">My Request</p>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card border-0 mb-2 justify-content-center align-items-center bg-transparent">
+                    <img src="logo.png" class="card-img-top" alt="..." height="60" width="20">
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card border-0 mb-2 justify-content-center align-items-center bg-transparent">
+                    <img src="logo.png" class="card-img-top" alt="..." height="40" width="20">
+                </div>
+                <div class="card-body p-0">
+                    <p class="card-text">Subsidy</p>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card border-0 mb-2 justify-content-center align-items-center bg-transparent">
+                    <img src="logo.png" class="card-img-top" alt="..." height="40" width="20">
+                </div>
+                <div class="card-body p-0">
+                    <p class="card-text">3D View</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

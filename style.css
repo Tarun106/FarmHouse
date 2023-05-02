@@ -1,0 +1,48 @@
+.loc,
+.lang {
+    font-size: 5px;
+}
+
+.search {
+    font-size: 10px;
+}
+
+form.d-flex {
+    width: 100vw;
+}
+
+.fa-search {
+    font-size: 11px;
+}
+
+.card-text {
+    font-size: 10px;
+}
+
+.hr-stock {
+    border-radius: 30px;
+    top: -30px;
+}
+
+.hr-stock-3 {
+    top: -60px;
+}
+
+.round-cols,
+.round-cards,
+.round-cards img {
+    border-radius: 30px;
+}
+
+.card-img-top {
+    border-radius: 20px;
+}
+
+.round-cols {
+    background-color: rgba(128, 131, 134, 0.398);
+    width: 30%;
+}
+
+.bg-warning .card-text{
+    font-size: 7px;
+}
