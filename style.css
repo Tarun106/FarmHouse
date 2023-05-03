@@ -1,9 +1,6 @@
 form.d-flex {
     width: 100vw;
 }
-
-
-
 .hr-stock {
     border-radius: 30px;
     top: -12px;
@@ -23,6 +20,30 @@ form.d-flex {
     background-color: rgba(128, 131, 134, 0.398);
 }
 
+.skiptranslate{
+    visibility: collapse;
+}
+div#\:0\.targetLanguage{
+    visibility: visible;
+}
+.skiptranslate iframe, .skiptranslate span{
+    display: none;
+}
+.skiptranslate select{
+    background-color: #f9f9f9;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 2;
+    transition: all 200ms linear;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+    color: #102770;
+    box-shadow: 0 12px 35px 0 rgba(255,235,167,.15);
+}
 
 
 @media screen and (min-width: 769px) {
@@ -44,9 +65,17 @@ form.d-flex {
         top: -150px;
     }
 
-    .loc,
-    .lang {
-        font-size: 10px;
+    .loc {
+        font-size: 15px;
+    }
+    span.bar{
+        font-size: 25px;
+    }
+    .skiptranslate select{
+        height: 30px;
+    }
+    .hr-stock {
+        font-size: 20px;
     }
 }
 
@@ -94,9 +123,11 @@ form.d-flex {
         font-size: 10px;
     }
 
-    .loc,
-    .lang {
+    .loc, .skiptranslate select{
         font-size: 5px;
+    }
+    .skiptranslate select{
+        width: 50px;
     }
 
 }
