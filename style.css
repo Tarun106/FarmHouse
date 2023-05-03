@@ -40,9 +40,50 @@ form.d-flex {
 
 .round-cols {
     background-color: rgba(128, 131, 134, 0.398);
-    width: 30%;
 }
 
-.bg-warning .card-text{
+.bg-warning .card-text {
     font-size: 7px;
+}
+
+@media screen and (min-width: 769px) {
+    .footer img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .footer .home img {
+        height: 100px;
+        width: 100px;
+    }
+    .farm-view img{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .footer .home img {
+        height: 50px;
+        width: 50px;
+    }
+    .farm-view img{
+        height: 100px;
+    }
+    .row.adv .card-img-top{
+        height: 30vh;
+    }
+    .round-cols{
+        width: calc(100vw - 68vw);
+    }
+}
+@media screen and (min-width: 500px ) and (max-width: 767px) {
+    
+    .round-cols{
+        width: calc(100vw - 77vw);
+    }
 }
