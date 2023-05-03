@@ -1,31 +1,12 @@
-.loc,
-.lang {
-    font-size: 5px;
-}
-
-.search {
-    font-size: 10px;
-}
-
 form.d-flex {
     width: 100vw;
 }
 
-.fa-search {
-    font-size: 11px;
-}
 
-.card-text {
-    font-size: 10px;
-}
 
 .hr-stock {
     border-radius: 30px;
-    top: -30px;
-}
-
-.hr-stock-3 {
-    top: -60px;
+    top: -12px;
 }
 
 .round-cols,
@@ -42,9 +23,7 @@ form.d-flex {
     background-color: rgba(128, 131, 134, 0.398);
 }
 
-.bg-warning .card-text {
-    font-size: 7px;
-}
+
 
 @media screen and (min-width: 769px) {
     .footer img {
@@ -56,8 +35,18 @@ form.d-flex {
         height: 100px;
         width: 100px;
     }
-    .farm-view img{
+
+    .farm-view img {
         height: 300px;
+    }
+
+    .hr-stock-3 {
+        top: -150px;
+    }
+
+    .loc,
+    .lang {
+        font-size: 10px;
     }
 }
 
@@ -71,19 +60,50 @@ form.d-flex {
         height: 50px;
         width: 50px;
     }
-    .farm-view img{
+
+    .farm-view img {
         height: 100px;
     }
-    .row.adv .card-img-top{
-        height: 30vh;
+
+    .row.adv .card-img-top {
+        height: calc(100vh - 75vh);
     }
-    .round-cols{
+
+    .round-cols {
         width: calc(100vw - 68vw);
     }
+
+    .card-text {
+        font-size: 10px;
+    }
+
+    .bg-warning .card-text {
+        font-size: 7px;
+    }
+
+    .hr-stock-3 {
+        top: -60px;
+        font-size: 12px;
+    }
+
+    .fa-search {
+        font-size: 11px;
+    }
+
+    .search {
+        font-size: 10px;
+    }
+
+    .loc,
+    .lang {
+        font-size: 5px;
+    }
+
 }
-@media screen and (min-width: 500px ) and (max-width: 767px) {
-    
-    .round-cols{
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+
+    .round-cols {
         width: calc(100vw - 77vw);
     }
 }
